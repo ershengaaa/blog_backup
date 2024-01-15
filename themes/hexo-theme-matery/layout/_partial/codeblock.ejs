@@ -20,3 +20,8 @@
 <% if (theme.code.shrink) { %>
 <script type="text/javascript" src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.codeshrink) %>"></script>
 <% } %>
+
+<!-- 代码块全屏显示 -->
+<% if (theme.code.expand) { %>
+<script type="text/javascript" src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.codeshowexpand) %>"></script>
+<% } %>

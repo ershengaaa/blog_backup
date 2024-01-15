@@ -36,3 +36,24 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+:smile_cat:
+
+{% codeblock [title] [lang:language] [url] [link text] [additional options] %}
+code snippet
+{% endcodeblock %}
+
+```c
+void main()
+{
+	int a = 0;
+	printf("%d\n", a);
+	return 0;
+}
+```
+
+### 测试图片懒加载
+
+![avatar](https://cdn.jsdelivr.net/gh/ershengaaa/ershengaaa.github.io/medias/images/02.jpg)
+
+

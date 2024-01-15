@@ -19,35 +19,35 @@ menu:
   Contact:
     url: /contact
     icon: fas fa-comments
-  Friends:
-    url: /friends
-    icon: fas fa-address-book
+  #Friends:
+  #  url: /friends
+  #  icon: fas fa-address-book
   # 二级菜单写法如下
-  #Medias:
-  #  icon: fas fa-list
-  #  children:
-  #    - name: Musics
-  #      url: /musics
-  #      icon: fas fa-music
-  #    - name: Movies
-  #      url: /movies
-  #      icon: fas fa-film
-  #    - name: Books
-  #      url: /books
-  #      icon: fas fa-book
-  #    - name: Galleries
-  #      url: /galleries
-  #      icon: fas fa-image
+  Medias:
+    icon: fas fa-list
+    children:
+      - name: 音乐
+        url: /musics
+        icon: fas fa-music
+      - name: 视频
+        url: /movies
+        icon: fas fa-film
+      - name: 书单
+        url: /books
+        icon: fas fa-book
+      - name: 图片
+        url: /galleries
+        icon: fas fa-image
 
 # Website start time.
 # 站点运行开始时间.
 time:
-  enable: false
-  year: 2019 # 年份
-  month: 06 # 月份
-  date: 28 # 日期
-  hour: 00 # 小时
-  minute: 00 # 分钟
+  enable: true
+  year: 2024 # 年份
+  month: 1 # 月份
+  date: 6 # 日期
+  hour: 9 # 小时
+  minute: 57 # 分钟
   second: 00 # 秒
 
 # Index cover carousel configuration.
@@ -79,7 +79,7 @@ dream:
 # Whether to display the musics.
 # 是否在首页显示音乐.
 music:
-  enable: true
+  enable: false
   title: #非吸底模式有效
     enable: true
     show: 听听音乐
@@ -87,7 +87,7 @@ music:
   server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
   id: 503838841     #require	song id / playlist id / album id / search keyword
-  fixed: true       # 开启吸底模式
+  fixed: false       # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: '#42b983'
   loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
@@ -100,13 +100,13 @@ music:
 # Whether to display the musics.
 # 单独的音乐页面.
 musics:
-  enable: false
+  enable: true
   title:          #非吸底模式有效
     enable: true
     show: 听听音乐
   server: tencent   #require music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
-  id: 1776127550     #require song id / playlist id / album id / search keyword
+  id: 8792069423     #require song id / playlist id / album id / search keyword
   fixed: false      # 开启吸底模式
   autoplay: true   # 是否自动播放
   theme: '#42b983'
@@ -144,8 +144,8 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: /favicon.png
-logo: /medias/logo.png
+favicon: /favicon.jpg
+logo: /medias/logo.jpg
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
@@ -153,18 +153,18 @@ logo: /medias/logo.png
 indexbtn:
   enable: true
   name: Github
-  icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  icon: fa-brands fa-github
+  url: https://github.com/ershengaaa
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/blinkfox
-  email: 1181062873@qq.com
+  github:  https://github.com/ershengaaa
+  email: ershengaaa@gmail.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: 1181062873
+  qq: 1137228286
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
   rss: true # true、false
@@ -185,6 +185,7 @@ code:
   copy: true # 代码块是否可复制
   shrink: true # 代码块是否可以收缩
   break: false # 代码是否折行
+  expand: false # 代码块是否可以全屏显示
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
@@ -217,11 +218,11 @@ mathjax:
 # 文章信息--若要开启文章字数统计，需要安装 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
 postInfo:
   date: true # 发布日期
-  update: false # 更新日期
-  wordCount: false # 文章字数统计
-  totalCount: false # 站点总文章字数
-  min2read: false # 文章阅读时长
-  readCount: false # 文章阅读次数
+  update: true # 更新日期
+  wordCount: true # 文章字数统计
+  totalCount: true # 站点总文章字数
+  min2read: true # 文章阅读时长
+  readCount: true # 文章阅读次数
 
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
@@ -241,7 +242,7 @@ clicklove:
 # 是否激活页面樱花效果, 只在桌面版网页启用特效
 # 下面三种特效建议选择一种就够了，
 sakura:
-  enable: false
+  enable: true
 
 # 是否激活页面鼠标星星跟随效果, 只在桌面版网页启用特效
 mouseStar:
@@ -254,15 +255,15 @@ snowdown:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
-  career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  avatar: /medias/avatar_q.jpg
+  career: 嵌入式软件工程师
+  introduction: 再美的风景不及你回家的那条路~
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
+  enable: false
   data:
     hexo-theme-matery:
       icon: fas fa-file-alt
@@ -286,21 +287,21 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
+    C:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
       percent: 85%
-    JavaScript:
+    Linux:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 80%
-    HTML5:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
-      percent: 80%
-    CSS:
-      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
       percent: 70%
-    SQL:
+    C++:
+      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+      percent: 70%
+    Python:
+      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
+      percent: 50%
+    Go:
       background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 90%
+      percent: 0%
     程序设计:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
       percent: 75%
@@ -311,9 +312,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/0.jpg
-    - /medias/featureimages/1.jpg
-    - /medias/featureimages/2.jpg
+    - /medias/featureimages/5.jpg
+    - /medias/featureimages/14.jpg
+    - /medias/featureimages/23.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -369,24 +370,24 @@ livere:
 # 介绍: https://cloud.tencent.com/document/product/1110/36841
 # 管理验证码: https://console.cloud.tencent.com/captcha/graphical
 tcaptcha:
-  enable: true
+  enable: false
   appid: xxxxxxxxxx # 你的appid
 
 # The configuration of the Valine comment module is not activated by default.
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:  # 必填
-  appKey: # 必填
-  serverURLs: # 必填 https://你的api
+  enable: true
+  appId:  W30dNecKt4OZ0vIqyrBLpdYi-MdYXbMMI
+  appKey: zK22OUTZVDbWADzzTmRb6qNp
+  serverURLs: https://w30dneck.api.lncldglobal.com
   notify: false
   verify: false
   visitor: true
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
   placeholder: 'just go go' # Comment Box placeholder
-  background: /medias/comment_bg.png
+  background: https://cdn.jsdelivr.net/gh/ershengaaa/ershengaaa.github.io/medias/comment_bg.png
   coolpushkey: 
 
 # The configuration of the Waline comment module is not activated by default.
@@ -408,7 +409,7 @@ changyan:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/ershengaaa
   title: Fork Me
 
 # The configuration of the Twikoo comment module is not activated by default.
@@ -448,8 +449,8 @@ googleAnalytics:
 # Add baidu analytics configuration
 # 添加 baidu Analytics 配置
 baiduAnalytics:
-  enable: false
-  id:
+  enable: true
+  id: 3b32fa1d6bc8f146483dd8b10fda260a
 
 # 百度搜索资源平台提交链接
 baiduPush: true
@@ -472,7 +473,7 @@ libs:
     aos: /libs/aos/aos.css
     animate: /libs/animate/animate.min.css # V3.5.1
     lightgallery: /libs/lightGallery/css/lightgallery.min.css # V1.10.0
-    aplayer: /libs/aplayer/APlayer.min.css
+    aplayer: https://cdn.jsdelivr.net/gh/ershengaaa/ershengaaa.github.io/libs/aplayer/APlayer.min.css
     dplayer: /libs/dplayer/DPlayer.min.css
     gitalk: /libs/gitalk/gitalk.css
     jqcloud: /libs/jqcloud/jqcloud.css
@@ -492,7 +493,7 @@ libs:
     lightgallery: /libs/lightGallery/js/lightgallery-all.min.js # V1.10.0
     typed: /libs/typed/typed.js
     clicklove: /libs/others/clicklove.js
-    sakura: /libs/others/sakura.js
+    sakura: /libs/others/sakura-small.js
     star: /libs/others/star.js
     snow: /libs/others/snow.js
     tcaptcha: /libs/others/TencentCaptcha.js
@@ -503,7 +504,7 @@ libs:
     crypto: /libs/cryptojs/crypto-js.min.js
     echarts: /libs/echarts/echarts.min.js
     gitalk: /libs/gitalk/gitalk.min.js
-    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    valine: /libs/valine/Valine.min.js #https://cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
     minivaline: /libs/minivaline/MiniValine.js # latest
     waline: /libs/waline/Waline.min.js # 若想保持最新版，请替换为 https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js 默认为(1.5.2版本) /libs/valine/Valine.min.js
     twikoo: /libs/twikoo/twikoo.all.min.js # 若想保持最新版，请替换为 https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js  默认为 /libs/twikoo/twikoo.all.min.js
@@ -522,6 +523,7 @@ libs:
     codelang: /libs/codeBlock/codeLang.js
     codecopy: /libs/codeBlock/codeCopy.js
     codeshrink: /libs/codeBlock/codeShrink.js
+    codeshowexpand: /libs/codeBlock/codeShowExpand.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
@@ -607,7 +609,7 @@ ribbon:
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: false
+  enable: true
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
@@ -652,7 +654,7 @@ banner:
 # 中文繁简转换开关
 # 显示在底部 footer 栏
 translate:
-  enable: false
+  enable: true
 
 #ICP备案信息尾部显示
 icp:
@@ -670,7 +672,7 @@ icp:
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
 # 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在上面设置js及css路径中可以直接写.min.xxx
 jsDelivr:
-  url: # https://cdn.jsdelivr.net/gh/skyls03/skyls03.github.io
+  url: https://cdn.jsdelivr.net/gh/ershengaaa/ershengaaa.github.io # https://cdn.jsdelivr.net/gh/skyls03/skyls03.github.io
   
 # 网站背景图
 background:
