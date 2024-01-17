@@ -1,0 +1,22 @@
+[
+    {
+        "name": "2023",
+        "cover": "/medias/images/01.jpg",
+        "description": "images",
+        "photos": [
+          "/medias/images/01.jpg",
+          "/medias/images/02.jpg",
+          "/medias/images/03.jpg"
+        ]
+    },
+    {
+      "name": "2024",
+      "cover": "/medias/banner/2.jpg",
+      "description": "banner",
+      "photos": [
+        "/medias/banner/1.jpg",
+        "/medias/banner/3.jpg",
+        "/medias/banner/6.jpg"
+      ]
+    }
+]

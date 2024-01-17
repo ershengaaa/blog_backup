@@ -35,7 +35,7 @@ menu:
       - name: 书单
         url: /books
         icon: fas fa-book
-      - name: 图片
+      - name: 相册
         url: /galleries
         icon: fas fa-image
 
@@ -386,7 +386,7 @@ valine:
   visitor: true
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
-  placeholder: 'just go go' # Comment Box placeholder
+  placeholder: '快来这里留下你的小脚印吧~' # Comment Box placeholder
   background: https://cdn.jsdelivr.net/gh/ershengaaa/ershengaaa.github.io/medias/comment_bg.png
   coolpushkey: 
 
