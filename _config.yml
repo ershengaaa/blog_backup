@@ -138,7 +138,7 @@ feed:
 # 添加prism_plugin配置项
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
+  theme: 'duotone-dark'
   line_number: true    # default false
   custom_css:
 
