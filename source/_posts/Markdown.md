@@ -391,3 +391,56 @@ or
 ![](https://cdn.jsdelivr.net/gh/ershengaaa/ershengaaa.github.io/medias/images/03.jpg)
 {% endgi %}
 
+### 6. hexo-admonition
+
+> [hexo-admonition](https://github.com/lxl80/hexo-admonition)
+
+#### 6.1. 使用方法
+
+```markdown
+!!! type Test Hexo-admonition
+    Test Hexo-admonition
+```
+
+* `type`：支持类型，`note` | `info` | `todo` | `warning` | `attention` | `caution` | `error` | `failure` | `missing` | `fail`
+
+#### 6.2. 示例
+
+````markdown
+```
+!!! note 
+    note采用默认title示例 <!-- 内容开头需4个空格，使用tab存在问题 -->
+```
+
+```
+!!! note ""
+    不采用默认title示例
+```
+
+```
+!!! info 嵌套链接及引用块
+    嵌套链接：[昭阳](https://www.ershengaaa.cn)
+    > 引用信息
+```
+
+```
+!!! error Hexo-admonition 插件使用示例
+    这是基于 hexo-admonition 插件渲染的一条提示信息。类型为 note，并设置了自定义标题。
+    提示内容开头留 4 个空格，可以有多行，最后用空行结束此标记。
+```
+````
+
+!!! note 
+    note采用默认title示例
+
+!!! note ""
+    不采用默认title示例
+
+!!! info 嵌套链接及引用块
+    嵌套链接：[昭阳](https://www.ershengaaa.cn)
+    > 引用信息
+
+!!! error Hexo-admonition 插件使用示例
+    这是基于 hexo-admonition 插件渲染的一条提示信息。类型为 note，并设置了自定义标题。
+    提示内容开头留 4 个空格，可以有多行，最后用空行结束此标记。
+
