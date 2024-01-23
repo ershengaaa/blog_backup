@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://ershengaaa.github.io/
+url: https://ershengaaa.cn/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -105,7 +105,7 @@ deploy:
     repository: https://github.com/ershengaaa/ershengaaa.github.io.git  #你的仓库地址
     branch: main
   - type: git
-    repository: git@gitee.com:ershengaaa/blog.git #你的仓库地址
+    repository: git@gitee.com:ershengaaa/ershengaaa.git #你的仓库地址
     branch: master
 
 search:
