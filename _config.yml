@@ -180,3 +180,11 @@ douban:
       title: '我的书单'
       quote: '看见，理解，远方'
 timeout: 10000
+
+#支持markdown公式
+# _config.yml
+markdown:
+  plugins:
+    - name: markdown-it-latex2img
+      options:
+        style: 'filter: opacity(90%);transform:scale(0.85);text-align:center;'
