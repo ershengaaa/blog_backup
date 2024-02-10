@@ -451,92 +451,78 @@ or
 > [markdown-it-latex2img](https://github.com/MakerGYT/markdown-it-latex2img)
 >
 > [demo](https://makergyt.github.io/markdown-it-latex2img/)
+>
+> 在线`latex`工具 [math.vercel.app](https://math.vercel.app/home)
 
 #### 7.2 数学公式
 ##### 7.2.1. 内联公式
 **开头的`$`必须在其右边紧跟一个非空格字符，而结尾的`$`必须在其左边紧接一个非空格字符，并且不能紧跟一个数字。**
 
-- 勾股定理: $a^2+b^2=c^2$
-- 等差数列求和公式: $S_{n}=n a_{1}+\frac{n(n-1)}{2} d, n \in N^{*}$
-- 牛顿-莱布尼茨公式: $\int_{a}^{b} f(x) d x=F(b)-F(a)=\left.F(x)\right|_{a} ^{b}$
-- 二项分布: $P_{n}(k)=C_{n}^{k} p^{k} q^{n-k} \quad k=0,1,2 \ldots \ldots, n$
+- 勾股定理: <img src="https://math.now.sh?inline=a%5E2%2Bb%5E2%3Dc%5E2" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
+- 等差数列求和公式: <img src="https://math.now.sh?inline=S_%7Bn%7D%3Dn%20a_%7B1%7D%2B%5Cfrac%7Bn%28n-1%29%7D%7B2%7D%20d%2C%20n%20%5Cin%20N%5E%7B*%7D" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
+- 牛顿-莱布尼茨公式: <img src="https://math.now.sh?inline=%5Cint_%7Ba%7D%5E%7Bb%7D%20f%28x%29%20d%20x%3DF(b)-F(a)%3D%5Cleft.F(x)%5Cright%7C_%7Ba%7D%20%5E%7Bb%7D" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
+- 二项分布: <img src="https://math.now.sh?inline=P_%7Bn%7D%28k%29%3DC_%7Bn%7D%5E%7Bk%7D%20p%5E%7Bk%7D%20q%5E%7Bn-k%7D%20%5Cquad%20k%3D0%2C1%2C2%20%5Cldots%20%5Cldots%2C%20n" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
 ##### 7.2.2. 块公式
-正态分布$X \sim N(\mu,\sigma^2)$: 
-$$
-f(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
-$$
-斐波那契数列$A_n=A_{n-1}+A_{n-2}$,前后两项的比值逐渐收敛到黄金分割比例
-$$
-\lim_{n\to \infty}\frac{A_{n-1}}{A_n}=\frac{\sqrt{5}-1}{2}.
-$$
+正态分布<img src="https://math.now.sh?inline=X%20%5Csim%20N%28%5Cmu%2C%5Csigma%5E2%29" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">: 
+
+<img src="https://math.now.sh?from=f%28x%29%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%5Cpi%7D%5Csigma%7De%5E%7B-%5Cfrac%7B(x-%5Cmu)%5E2%7D%7B2%5Csigma%5E2%7D%7D%0A">
+
+斐波那契数列<img src="https://math.now.sh?inline=A_n%3DA_%7Bn-1%7D%2BA_%7Bn-2%7D" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">,前后两项的比值逐渐收敛到黄金分割比例
+
+<img src="https://math.now.sh?from=%5Clim_%7Bn%5Cto%20%5Cinfty%7D%5Cfrac%7BA_%7Bn-1%7D%7D%7BA_n%7D%3D%5Cfrac%7B%5Csqrt%7B5%7D-1%7D%7B2%7D.%0A">
+
 因式分解
-$$
-\begin{split}(x−1)(x−3)&=x^2−4x+3 \\ 
-&=x^2−4x+4−1 \\ 
-&=(x−2)^2−1
-\end{split}
-$$
+
+<img src="https://math.now.sh?from=%5Cbegin%7Bsplit%7D%28x%E2%88%921%29(x%E2%88%923)%26%3Dx%5E2%E2%88%924x%2B3%20%5C%5C%20%0A%26%3Dx%5E2%E2%88%924x%2B4%E2%88%921%20%5C%5C%20%0A%26%3D(x%E2%88%922)%5E2%E2%88%921%0A%5Cend%7Bsplit%7D%0A">
+
 狄利克雷函数
-$$
-D(x)=
-\begin{cases}
-1,& x \in Q \\
-0,& x \notin Q
-\end{cases}
-$$
+
+<img src="https://math.now.sh?from=D%28x%29%3D%0A%5Cbegin%7Bcases%7D%0A1%2C%26%20x%20%5Cin%20Q%20%5C%5C%0A0%2C%26%20x%20%5Cnotin%20Q%0A%5Cend%7Bcases%7D%0A">
+
 高斯公式
-$$
-\iiint_{\Omega}\left(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\right) d v=\iint_{\Sigma} P d y d z+Q d z d x+R d x d y
-$$
+
+<img src="https://math.now.sh?from=%5Ciiint_%7B%5COmega%7D%5Cleft%28%5Cfrac%7B%5Cpartial%20P%7D%7B%5Cpartial%20x%7D%2B%5Cfrac%7B%5Cpartial%20Q%7D%7B%5Cpartial%20y%7D%2B%5Cfrac%7B%5Cpartial%20R%7D%7B%5Cpartial%20z%7D%5Cright%29%20d%20v%3D%5Ciint_%7B%5CSigma%7D%20P%20d%20y%20d%20z%2BQ%20d%20z%20d%20x%2BR%20d%20x%20d%20y%0A">
+
 范德蒙行列式
-$$
-D_{n-1}=\left|\begin{array}{cccc}
-1 & 1 & \dots & 1 \\
-x_{2} & x_{3} & \dots & x_{n} \\
-\vdots & \vdots & & \vdots \\
-x_{2}^{n-2} & x_{3}^{n-2} & \dots & x_{n}^{n-2}
-\end{array}\right|=\prod_{2 \leq j<i \leq n}\left(x_{i}-x_{j}\right)
-$$
+
+<img src="https://math.now.sh?from=D_%7Bn-1%7D%3D%5Cleft%7C%5Cbegin%7Barray%7D%7Bcccc%7D%0A1%20%26%201%20%26%20%5Cdots%20%26%201%20%5C%5C%0Ax_%7B2%7D%20%26%20x_%7B3%7D%20%26%20%5Cdots%20%26%20x_%7Bn%7D%20%5C%5C%0A%5Cvdots%20%26%20%5Cvdots%20%26%20%26%20%5Cvdots%20%5C%5C%0Ax_%7B2%7D%5E%7Bn-2%7D%20%26%20x_%7B3%7D%5E%7Bn-2%7D%20%26%20%5Cdots%20%26%20x_%7Bn%7D%5E%7Bn-2%7D%0A%5Cend%7Barray%7D%5Cright%7C%3D%5Cprod_%7B2%20%5Cleq%20j%3Ci%20%5Cleq%20n%7D%5Cleft%28x_%7Bi%7D-x_%7Bj%7D%5Cright%29" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
+
 线性方程组
-$$
-\left\{\begin{aligned}
-a_{11} x_{1}+a_{12} x_{2}+\cdots+a_{1 n} x_{n} &=b_{1} \\
-a_{21} x_{1}+a_{22} x_{2}+\cdots+a_{2 n} x_{n} &=b_{2} \\
-\cdots \cdots \cdots \\
-a_{m 1} x_{1}+a_{m 2} x_{2}+\cdots+a_{m n} x_{n} &=b_{m}
-\end{aligned}\right.
-$$
+
+<img src="https://math.now.sh?from=%5Cleft%5C%7B%5Cbegin%7Baligned%7D%0Aa_%7B11%7D%20x_%7B1%7D%2Ba_%7B12%7D%20x_%7B2%7D%2B%5Ccdots%2Ba_%7B1%20n%7D%20x_%7Bn%7D%20%26%3Db_%7B1%7D%20%5C%5C%0Aa_%7B21%7D%20x_%7B1%7D%2Ba_%7B22%7D%20x_%7B2%7D%2B%5Ccdots%2Ba_%7B2%20n%7D%20x_%7Bn%7D%20%26%3Db_%7B2%7D%20%5C%5C%0A%5Ccdots%20%5Ccdots%20%5Ccdots%20%5C%5C%0Aa_%7Bm%201%7D%20x_%7B1%7D%2Ba_%7Bm%202%7D%20x_%7B2%7D%2B%5Ccdots%2Ba_%7Bm%20n%7D%20x_%7Bn%7D%20%26%3Db_%7Bm%7D%0A%5Cend%7Baligned%7D%5Cright.">
 
 #### 7.3. 物理公式
 
-- 牛顿第一定律: $\sum \vec{F}_{i}=\frac{\mathrm{d} \vec{v}}{\mathrm{d} t}=0$
-- 牛顿第二定律: $\vec{F}=\frac{\mathrm{d} m}{\mathrm{d} t} \vec{v}+m \frac{\mathrm{d} \vec{v}}{\mathrm{d} t}=\frac{\mathrm{d} m}{\mathrm{d} t} \vec{v}+m \vec{a}=\frac{\mathrm{d} m}{\mathrm{d} t} \vec{v}+m \frac{\mathrm{d}^{2} \vec{r}}{\mathrm{d} t^{2}}$
-- 牛顿第三定律: $\overrightarrow{F_{12}}=-\overrightarrow{F_{21}}$
-- 质能守恒: $E=mc^2$
+- 牛顿第一定律: <img src="https://math.now.sh?inline=%5Csum%20%5Cvec%7BF%7D_%7Bi%7D%3D%5Cfrac%7B%5Cmathrm%7Bd%7D%20%5Cvec%7Bv%7D%7D%7B%5Cmathrm%7Bd%7D%20t%7D%3D0" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
+- 牛顿第二定律: <img src="https://math.now.sh?inline=%5Cvec%7BF%7D%3D%5Cfrac%7B%5Cmathrm%7Bd%7D%20m%7D%7B%5Cmathrm%7Bd%7D%20t%7D%20%5Cvec%7Bv%7D%2Bm%20%5Cfrac%7B%5Cmathrm%7Bd%7D%20%5Cvec%7Bv%7D%7D%7B%5Cmathrm%7Bd%7D%20t%7D%3D%5Cfrac%7B%5Cmathrm%7Bd%7D%20m%7D%7B%5Cmathrm%7Bd%7D%20t%7D%20%5Cvec%7Bv%7D%2Bm%20%5Cvec%7Ba%7D%3D%5Cfrac%7B%5Cmathrm%7Bd%7D%20m%7D%7B%5Cmathrm%7Bd%7D%20t%7D%20%5Cvec%7Bv%7D%2Bm%20%5Cfrac%7B%5Cmathrm%7Bd%7D%5E%7B2%7D%20%5Cvec%7Br%7D%7D%7B%5Cmathrm%7Bd%7D%20t%5E%7B2%7D%7D" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
+- 牛顿第三定律: <img src="https://math.now.sh?inline=%5Coverrightarrow%7BF_%7B12%7D%7D%3D-%5Coverrightarrow%7BF_%7B21%7D%7D" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
+- 质能守恒: <img src="https://math.now.sh?inline=E%3Dmc%5E2" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
 
-万有引力定律: $F=\frac{G M m}{r^{2}}$
-$$G \frac{m M}{(r+h)^{2}}=m \frac{\nu^{2}}{(r+h)}$$
+万有引力定律: <img src="https://math.now.sh?inline=F%3D%5Cfrac%7BG%20M%20m%7D%7Br%5E%7B2%7D%7D" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
+
+<img src="https://math.now.sh?from=G%20%5Cfrac%7Bm%20M%7D%7B%28r%2Bh%29%5E%7B2%7D%7D%3Dm%20%5Cfrac%7B%5Cnu%5E%7B2%7D%7D%7B(r%2Bh)%7D%0A">
+
 基尔霍夫定律
-$$\left[\frac{\partial\left(\Delta_{r} H_{m}\right)}{\partial T}\right]_{p}=\sum_{B} v_{B} C_{p, m}(B)$$
+<img src="https://math.now.sh?from=%5Cleft%5B%5Cfrac%7B%5Cpartial%5Cleft%28%5CDelta_%7Br%7D%20H_%7Bm%7D%5Cright%29%7D%7B%5Cpartial%20T%7D%5Cright%5D_%7Bp%7D%3D%5Csum_%7BB%7D%20v_%7BB%7D%20C_%7Bp%2C%20m%7D(B)%0A" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
 热力学第二定律
-$$d S \geq \frac{\delta Q}{T}$$
+<img src="https://math.now.sh?from=d%20S%20%5Cgeq%20%5Cfrac%7B%5Cdelta%20Q%7D%7BT%7D%0A" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
 
 #### 7.4. 化学公式
 
-离子反应与沉淀: $\ce{SO4^2- + Ba^2+ -> BaSO4 v}$
+离子反应与沉淀: <img src="https://math.now.sh?inline=%5Cce%7BSO4%5E2-%20%2B%20Ba%5E2%2B%20-%3E%20BaSO4%20v%7D" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
 
 氮气氢气合成氨
-$$
-\ce{N2 + 3H2 <=>T[高温、加压][催化剂] 2NH3}
-$$
-化学平衡常数:$\mathrm{Zn}+2 \mathrm{HCl}(\mathrm{aq})=\mathrm{H}_{2}+\mathrm{ZnCl}_{2} \quad(\mathrm{aq})$
-$$K^{\theta}=\frac{\left[p\left(\mathrm{H}_{2}\right) / p^{\theta}\right]\left[c\left(\mathrm{ZnCl}_{2}\right)\right]}{c^{2}(\mathrm{HC})}$$
+
+<img src="https://math.now.sh?from=%5Cce%7BN2%20%2B%203H2%20%3C%3D%3ET%5B%E9%AB%98%E6%B8%A9%E3%80%81%E5%8A%A0%E5%8E%8B%5D%5B%E5%82%AC%E5%8C%96%E5%89%82%5D%202NH3%7D%0A">
+
+化学平衡常数:<img src="https://math.now.sh?inline=%5Cmathrm%7BZn%7D%2B2%20%5Cmathrm%7BHCl%7D%28%5Cmathrm%7Baq%7D%29%3D%5Cmathrm%7BH%7D_%7B2%7D%2B%5Cmathrm%7BZnCl%7D_%7B2%7D%20%5Cquad(%5Cmathrm%7Baq%7D)" style="filter: opacity(75%);transform:scale(0.75);text-align:centerdisplay:inline-block;margin: 0;">
+
+<img src="https://math.now.sh?from=K%5E%7B%5Ctheta%7D%3D%5Cfrac%7B%5Cleft%5Bp%5Cleft%28%5Cmathrm%7BH%7D_%7B2%7D%5Cright%29%20%2F%20p%5E%7B%5Ctheta%7D%5Cright%5D%5Cleft%5Bc%5Cleft(%5Cmathrm%7BZnCl%7D_%7B2%7D%5Cright)%5Cright%5D%7D%7Bc%5E%7B2%7D(%5Cmathrm%7BHC%7D)%7D%0A">
 
 #### 7.4. 生物公式
 光合作用
-$$
-\ce{CO}_{2} + 2{H}_{2}{O} ->T[光、叶绿体][酶] ({CH}_{2}O) + {H}_{2}{O} + {O}_{2}
-$$
+
+<img src="https://math.now.sh?from=%5Cce%7B%7BCO%7D_%7B2%7D%20%2B%202%7BH%7D_%7B2%7D%7BO%7D%20-%3ET%5B%E5%85%89%E3%80%81%E5%8F%B6%E7%BB%BF%E4%BD%93%5D%5B%E9%85%B6%5D%20%28%7BCH%7D_%7B2%7DO%29%20%2B%20%7BH%7D_%7B2%7D%7BO%7D%20%2B%20%7BO%7D_%7B2%7D%7D%0A">
 
 #### 7.5. 语法参考
 [MathJax basic tutorial and quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
